@@ -1,0 +1,26 @@
+#Class File
+*.class
+
+#Log Files
+*.log
+
+#Package File
+*.jar
+*.war*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+#Project Eclipse
+*.classpath
+.project
+*.settings
+
+#target
+javadoc-bundle-options*
+maven-javadoc-plugin*
+
+backups/*
+logs/*
+CalculateEstaditicasConcurrenciaServicio/target/*
