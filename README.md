@@ -11,7 +11,7 @@ Aplicacion compuesta por un conjuunto de ejemplos de concurrencia utilizando el 
 
 <h2> Módulos </h2>
 
-<h3> EjemploHilos: </h3> Ejemplo básico de creacion de hilos utilizando la clase Thread y la inerfaz Runnable
+<h3> EjemploHilos: </h3> Ejemplo básico de creacion de hilos utilizando la clase Thread y la interfaz Runnable
 
 <h3> PrimosConcurrencia: </h3> Ejemplo que encuentra los primos existentes en un rango utilizando programacion concurrente bajo el enfoque productor consumidor
 
