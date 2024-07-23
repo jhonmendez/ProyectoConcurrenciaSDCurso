@@ -1,0 +1,9 @@
+docker-compose up --build
+
+docker build -t concurrencia_sd:latest dockerfile_all .
+
+docker tag concurrencia_sd:latest jhonmendez/concurrencia_sd
+
+docker push jhonmendez/concurrencia_sd
+
+docker run -d --name container_concurrencia_sd -p 8080:8080 concurrencia_sd:lates

@@ -1,0 +1,18 @@
+FROM openjdk:18-jdk-alpine3.14
+MAINTAINER cecar.edu.co
+COPY ./war/CalculateEstaditicasConcurrenciaServicio-1.0.war /usr/app/
+COPY ./datasets/* /usr/app/datasets/
+WORKDIR /usr/app
+RUN mkdir logs
+
+ENV server.port=8080
+ENV spring.application.name=CalculateEstaditicasConcurrenciaServicio
+ENV spring.path=datasets/
+ENV spring.filehasheader=true
+ENV logging.file.path=logs
+
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","CalculateEstaditicasConcurrenciaServicio-1.0.war"]
+
